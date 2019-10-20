@@ -1,0 +1,12 @@
+C:\Users\patri\Desktop\A\Projects\CRP\CustomRichPresence\CustomRichPresence\bin\Debug\CustomRichPresence.exe.config
+C:\Users\patri\Desktop\A\Projects\CRP\CustomRichPresence\CustomRichPresence\bin\Debug\CustomRichPresence.exe
+C:\Users\patri\Desktop\A\Projects\CRP\CustomRichPresence\CustomRichPresence\bin\Debug\CustomRichPresence.pdb
+C:\Users\patri\Desktop\A\Projects\CRP\CustomRichPresence\CustomRichPresence\obj\Debug\CustomRichPresence.csprojAssemblyReference.cache
+C:\Users\patri\Desktop\A\Projects\CRP\CustomRichPresence\CustomRichPresence\obj\Debug\CustomRichPresence.Properties.Resources.resources
+C:\Users\patri\Desktop\A\Projects\CRP\CustomRichPresence\CustomRichPresence\obj\Debug\CustomRichPresence.csproj.GenerateResource.cache
+C:\Users\patri\Desktop\A\Projects\CRP\CustomRichPresence\CustomRichPresence\obj\Debug\CustomRichPresence.csproj.CoreCompileInputs.cache
+C:\Users\patri\Desktop\A\Projects\CRP\CustomRichPresence\CustomRichPresence\obj\Debug\CustomRichPresence.exe
+C:\Users\patri\Desktop\A\Projects\CRP\CustomRichPresence\CustomRichPresence\obj\Debug\CustomRichPresence.pdb
+C:\Users\patri\Desktop\A\Projects\CRP\CustomRichPresence\CustomRichPresence\bin\Debug\discord_game_sdk.dll
+C:\Users\patri\Desktop\A\Projects\CRP\CustomRichPresence\CustomRichPresence\bin\Debug\discord_game_sdk.dll.lib
+C:\Users\patri\Desktop\A\Projects\CRP\CustomRichPresence\CustomRichPresence\obj\Debug\CustomRichPresence.Form1.resources
