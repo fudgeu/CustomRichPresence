@@ -6,7 +6,6 @@ C:\Users\patri\Desktop\A\Projects\CRP\CustomRichPresence\CustomRichPresence\bin\
 C:\Users\patri\Desktop\A\Projects\CRP\CustomRichPresence\CustomRichPresence\obj\Release\CustomRichPresence.Form1.resources
 C:\Users\patri\Desktop\A\Projects\CRP\CustomRichPresence\CustomRichPresence\obj\Release\CustomRichPresence.Properties.Resources.resources
 C:\Users\patri\Desktop\A\Projects\CRP\CustomRichPresence\CustomRichPresence\obj\Release\CustomRichPresence.csproj.GenerateResource.cache
-C:\Users\patri\Desktop\A\Projects\CRP\CustomRichPresence\CustomRichPresence\obj\Release\CustomRichPresence.csproj.CoreCompileInputs.cache
 C:\Users\patri\Desktop\A\Projects\CRP\CustomRichPresence\CustomRichPresence\obj\Release\CustomRichPresence.exe
 C:\Users\patri\Desktop\A\Projects\CRP\CustomRichPresence\CustomRichPresence\obj\Release\CustomRichPresence.pdb
 C:\Users\patri\Desktop\A\Projects\CRP\CustomRichPresence\CustomRichPresence\obj\Release\CustomRichPresence.csprojAssemblyReference.cache
@@ -17,3 +16,5 @@ C:\Users\patri\Desktop\A\Projects\CRP\CustomRichPresence\CustomRichPresence\bin\
 C:\Users\patri\Desktop\A\Projects\CRP\CustomRichPresence\CustomRichPresence\obj\Release\CustomRichPresence.csproj.CopyComplete
 C:\Users\patri\Desktop\A\Projects\CRP\CustomRichPresence\CustomRichPresence\obj\Release\CustomRichPresence.CreateApp.resources
 C:\Users\patri\Desktop\A\Projects\CRP\CustomRichPresence\CustomRichPresence\obj\Release\CustomRichPresence.CreateApp2.resources
+C:\Users\patri\Desktop\A\Projects\CRP\CustomRichPresence\CustomRichPresence\bin\Release\Newtonsoft.Json.dll
+C:\Users\patri\Desktop\A\Projects\CRP\CustomRichPresence\CustomRichPresence\bin\Release\Newtonsoft.Json.xml

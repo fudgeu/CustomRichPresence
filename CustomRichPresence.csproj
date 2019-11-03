@@ -40,6 +40,9 @@
     <Reference Include="Microsoft.Toolkit.Forms.UI.Controls.WebView">
       <HintPath>..\..\..\..\..\..\.nuget\packages\microsoft.toolkit.forms.ui.controls.webview\5.1.1\lib\net462\Microsoft.Toolkit.Forms.UI.Controls.WebView.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -85,8 +88,16 @@
     <Compile Include="Form2.Designer.cs">
       <DependentUpon>Form2.cs</DependentUpon>
     </Compile>
+    <Compile Include="JsonObjects\LastUsedID.cs" />
+    <Compile Include="JsonObjects\RPreset.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ThumbnailHelp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThumbnailHelp.Designer.cs">
+      <DependentUpon>ThumbnailHelp.cs</DependentUpon>
+    </Compile>
     <Compile Include="Tools.cs" />
     <EmbeddedResource Include="CreateApp.resx">
       <DependentUpon>CreateApp.cs</DependentUpon>
@@ -110,9 +121,13 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="ThumbnailHelp.resx">
+      <DependentUpon>ThumbnailHelp.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="discord_game_sdk.dll.lib">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -127,6 +142,8 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="bin\Release\img\SmallImageText.png" />
+    <None Include="bin\Release\img\BigImageText.png" />
     <Content Include="crp_tiQ_icon.ico" />
     <Content Include="DiscordSDK\discord_game_sdk.dll" />
     <Content Include="discord_game_sdk.dll">

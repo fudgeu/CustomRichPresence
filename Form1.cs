@@ -1,4 +1,6 @@
-﻿using Discord;
+﻿using CustomRichPresence.JsonObjects;
+using Discord;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -112,6 +114,32 @@ namespace CustomRichPresence
 
             webView1.NavigateToString(file);
 
+
+            //load in last used preset (if available)
+            
+            if (Form2.LUPexists)
+            {
+                RPreset preset = JsonConvert.DeserializeObject<RPreset>(File.ReadAllText(Form2.LUPpath));
+
+                textBox1.Text = preset.ActivityName;
+                textBox2.Text = preset.Description;
+                checkBox1.Checked = preset.InLobby;
+                numericUpDown1.Value = preset.LobbyCount;
+                numericUpDown2.Value = preset.LobbyMax;
+                checkBox2.Checked = preset.Thumbnails;
+                textBox3.Text = preset.LargeImageKeyword;
+                textBox4.Text = preset.LargeImageText;
+                textBox5.Text = preset.SmallImageKeyword;
+                textBox6.Text = preset.SmallImageText;
+                checkBox3.Checked = preset.TimeElapsedCheckbox;
+                checkBox4.Checked = preset.TimeRemainingCheckbox;
+                dateTimePicker1.Value = preset.TimeElapsed;
+                dateTimePicker2.Value = preset.TimeRemaining;
+
+                textBox1.ForeColor = Color.Black;
+                textBox2.ForeColor = Color.Black;
+                updatePreview();
+            }
         }
 
         public void updatePreview()
@@ -405,6 +433,25 @@ namespace CustomRichPresence
 
         private void onClose(object sender, EventArgs e)
         {
+            //save RPreset
+            RPreset preset = new RPreset();
+            preset.ActivityName          = textBox1.Text;
+            preset.Description           = textBox2.Text;
+            preset.InLobby               = checkBox1.Checked;
+            preset.LobbyCount            = (int)numericUpDown1.Value;
+            preset.LobbyMax              = (int)numericUpDown2.Value;
+            preset.Thumbnails            = checkBox2.Checked;
+            preset.LargeImageKeyword     = textBox3.Text;
+            preset.LargeImageText        = textBox4.Text;
+            preset.SmallImageKeyword     = textBox5.Text;
+            preset.SmallImageText        = textBox6.Text;
+            preset.TimeElapsedCheckbox   = checkBox3.Checked;
+            preset.TimeRemainingCheckbox = checkBox4.Checked;
+            preset.TimeElapsed           = dateTimePicker1.Value;
+            preset.TimeRemaining         = dateTimePicker2.Value;
+
+            File.WriteAllText(Form2.LUPpath, JsonConvert.SerializeObject(preset));
+            
             System.Windows.Forms.Application.Exit();
         }
 
@@ -445,6 +492,31 @@ namespace CustomRichPresence
                 dateTimePicker2.Enabled = false;
             }
             updatePreview();
+        }
+
+        private void button4_Click_1(object sender, EventArgs e)
+        {
+            textBox1.Text = "";
+            textBox2.Text = "";
+            checkBox1.Checked = false;
+            numericUpDown1.Value = 0;
+            numericUpDown2.Value = 0;
+            checkBox2.Checked = false;
+            textBox3.Text = "";
+            textBox4.Text = "";
+            textBox5.Text = "";
+            textBox6.Text = "";
+            checkBox3.Checked = false;
+            checkBox4.Checked = false;
+            dateTimePicker1.Value = new DateTime(1753, 1, 1, 0, 0, 0, 0);
+            dateTimePicker2.Value = new DateTime(1753, 1, 1, 0, 0, 0, 0);
+            updatePreview();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            ThumbnailHelp form = new ThumbnailHelp();
+            form.Show();
         }
     }
 }
